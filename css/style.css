@@ -4,14 +4,48 @@
 }
 
 body {
-	/*max-width: 1300px;*/
-	/*background: peru;*/
+	height: 100%;
+	width: 100%;
 }
 
 .page {
-	background: #ff9933;
-	/*border: 2px solid black;*/
-	margin: auto;
-	max-width: 85%;
-	height: 1200px;
+	background-image: url(../images/Cover-Comprar-por-Internet.png);
+	background-repeat: repeat-y;
+	background-size: 100%;
+	width: 100vw;
+	height: 100vh;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	background-position: center center;
+
 }
+
+.page:hover {
+	border: 6px solid #ff9933;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-repeat: no-repeat;
+	transition: .5s;
+}
+
+.page:hover p {
+	opacity: 1;
+	transform: rotate(0);
+	transition: 1s;
+}
+
+.page p{
+	position: absolute;
+	opacity: 0;
+	background: #ff9933;
+	margin-left: calc(50vw - 125px);
+	margin-top: calc(50vh - 125px);
+	width: 250px;
+	height: 250px;
+	padding: 20px;
+	transform: rotate(45deg);
+}
+
+
